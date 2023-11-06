@@ -25,8 +25,8 @@ services:
       - ./cloud-proxy/Caddyfile:/etc/caddy/Caddyfile
       - ./cloud-proxy/data:/data
     ports:
-      - 80:80
-      - 443:443
+      - 8066:8055
+      - 4433:4433
     depends_on:
       - gateway
     environment:
